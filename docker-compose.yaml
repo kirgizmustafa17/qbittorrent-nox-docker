@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    qbittorrent-nox:
+        ports:
+            - '800:8080'
+            - '0:63295'
+        volumes:
+            - /downloads/torrent:/downloads
+        image: 'kirgizmustafa17/qbittorrent-nox:latest'
+
